@@ -18,4 +18,4 @@ contract('SocialNetwork', (accounts) => {
             assert.notEqual(address, undefined)
         })
     })
-}) t
+}) 
