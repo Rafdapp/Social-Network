@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-undef
+// eslint-disable-next-line no-undef 
 const SocialNetwork = artifacts.require("SocialNetwork");
 
 module.exports = function (deployer) {
