@@ -6,6 +6,9 @@ import logo from '../logo.png';
 import './App.css';
 
 class App extends Component {
+  async componentWillMount() {
+    await this.loadWeb3()
+  }
 
   ansyc loadWeb3() {
     if (window.ethereum) {
@@ -28,8 +31,8 @@ class App extends Component {
       target = "_blank"
       rel = "noopener noreferrer" >
       Dapp University <
-      /a> <
-      /nav> <
+      /a> < /
+      nav > <
       div className = "container-fluid mt-5" >
       <
       div className = "row" >
@@ -52,20 +55,20 @@ class App extends Component {
       /a> <
       h1 > Dapp University Starter Kit < /h1> <
       p >
-      Edit < code > src / components / App.js < /code> and save to reload. <
-      /p> <
+      Edit < code > src / components / App.js < /code> and save to reload. < /
+      p > <
       a className = "App-link"
       href = "http://www.dappuniversity.com/bootcamp"
       target = "_blank"
       rel = "noopener noreferrer" >
       LEARN BLOCKCHAIN < u > < b > NOW! < /b></u >
       <
-      /a> <
-      /div> <
-      /main> <
-      /div> <
-      /div> <
-      /div>
+      /a> < /
+      div > <
+      /main> < /
+      div > <
+      /div> < /
+      div >
     );
   }
 }
